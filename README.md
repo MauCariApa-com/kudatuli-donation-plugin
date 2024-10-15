@@ -5,8 +5,6 @@
 
 ## Description
 
-## Description
-
 The **Kudatuli Donation Plugin** is a flexible and extensible WordPress donation plugin designed to accept donations through a variety of manual or automatic payment methods. It can integrate with **PayPal**, **Stripe**, **Bank transfers**, or any other payment gateway, making it highly adaptable to the specific needs of your organization.
 
 The plugin provides users with a simple way to process donations, whether through manual verification or automated payments. It includes features for handling donations securely and efficiently, such as custom post types for donation records, shortcodes for embedding forms, email notifications, and PDF receipt generation. The plugin also incorporates **Google reCAPTCHA** to protect your forms from spam and bot submissions.
