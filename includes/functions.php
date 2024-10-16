@@ -5,7 +5,7 @@ function kudatuli_donation_form() {
     ob_start(); ?>
     <form id="donation-form" method="post" action="<?php echo esc_url(home_url('/donation-confirmation')); ?>">
         <label for="paypal_email">PayPal Email Receiver:</label>
-        <input type="text" name="paypal_email" id="paypal_email" value="info@kudatuli.com" readonly style="background-color: transparent; border: 1px solid #ccc; color: #333;" />
+        <input type="text" name="paypal_email" id="paypal_email" value="email@example.com" readonly style="background-color: transparent; border: 1px solid #ccc; color: #333;" />
 
         <label for="donor_name">Your Name:</label>
         <input type="text" name="donor_name" id="donor_name" value="<?php echo isset($_POST['donor_name']) ? esc_attr($_POST['donor_name']) : ''; ?>" required>
@@ -43,7 +43,7 @@ function kudatuli_donation_form() {
         <div style="height: 20px;"></div> <!-- Adjust the height as needed -->
 
         <!-- Add reCAPTCHA here -->
-        <div class="g-recaptcha" data-sitekey="6LcWSloqAAAAAHjFHck0YIUXVlmquon5niaTQTv0"></div> <!-- Replace with your site key -->
+        <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div> <!-- Replace with your site key -->
 
         <input type="hidden" name="kudatuli_nonce" value="<?php echo wp_create_nonce('kudatuli_donation'); ?>">
 
